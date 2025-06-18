@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Page Scrolling Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+   .page1{
+      height: 100vh;
+      display: flex;
+      font-size: 40px;
+      color: black;
+      background-color: lightblue;
+      text-align: center;
+   }
+    .page2{
+        height: 100vh;
+      display: flex;
+      font-size: 40px;
+      position:sticky;
+      color: black;
+      background-color: lightblue;
+    }
+
+     .page3, .page4 {
+      height: 100vh;
+      display: flex;
+      font-size: 40px;
+      color: black;
+      background-color: lightblue;
+    }
+
+   .relative{
+        text-align:center;        
+    }
+  </style>
+</head>
+<body>
+   <div class="page1" >
+    <div class="relative">
+       <p>Hii</p> 
+    </div>
+   </div>
+ <div class="page2" >
+    <h2>page2</h2>
+ </div>
+ <div class="page3" >
+    <h2>page3</h2>
+ </div>
+
+    <div class="page4" >
+        <h2>page4</h2>
+    </div>
+    
+    
+</body>
+</html>

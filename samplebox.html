@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display:grid;
+            grid-template-rows:100px 100px 100px 100px;
+            grid-template-columns:100px 100px 100px 100px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        .b1{
+             grid-column-start:1;
+            grid-column-end:5;
+            background-color: lightsalmon;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .b2{
+            grid-column-start:1;
+            grid-column-end:3;
+            background-color: lightskyblue;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .b3{
+            grid-column-start:3;
+            grid-column-end:4;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .b4{
+            grid-column-start:4;
+            grid-column-end:5;
+            background-color: lightpink;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .b5{
+            grid-column-start:1;
+            grid-column-end:5;
+            background-color: lightgreen;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="b1">header</div>
+        <div class="b2">main</div>
+        <div class="b3">empty</div>
+        <div class="b4">sidebar</div>
+        <div class="b5">footer</div>
+    </div>
+</body>
+</html>

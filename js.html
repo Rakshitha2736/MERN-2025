@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    form input, form button {
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>Portfolio Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#objective">Career Objective</a></li>
+        <li><a href="#education">Education Qualification</a></li>
+        <li><a href="#projects">Projects Done</a></li>
+        <li><a href="#skills">Skills Set</a></li>
+        <li><a href="#certificates">Certificate Courses</a></li>
+        <li><a href="#interest">Areas of Interest</a></li>
+        <li><a href="#papers">Paper Presented</a></li>
+        <li><a href="#profile">Personal Profile</a></li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Rakshitha, a B.Tech IT student at Kongu Engineering College.</p>
+  </section>
+
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <button type="submit">Send</button>
+    </form>
+    <div id="greeting" style="margin-top: 10px; font-weight: bold;"></div>
+  </section>
+
+  
+  <script>
+    console.log("5");
+
+    function add(a, b) {
+      return a + b;
+    }
+
+    function string(x, y) {
+      return x + y;
+    }
+
+    function hello(name, age) {
+      return `Hi ${name}, I am ${age} years old.`;
+    }
+
+    function handleSubmit(event) {
+      event.preventDefault(); 
+
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+
+      document.getElementById("greeting").innerHTML = `Hello ${name}, welcome! We'll contact you at ${email}.`;
+    }
+
+    
+    console.log(add(5, 5));
+    console.log(string("Hello", "World"));
+    console.log(hello("Rakshitha", 19));
+  </script>
+</body>
+</html>
