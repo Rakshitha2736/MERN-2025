@@ -109,11 +109,35 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
+      <input type="text"  id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
       <textarea rows="4" placeholder="Your Message"></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
+  <script>
+    console.log("5");
+    function add(a,b){
+      return a+b
+    }
+    function string(x,y)
+    {
+      return x+y;
+    }
+ function hello(name,age)
+ {
+  return `hi ${name} Iam ${age} years old`;
+ }
+ function guys(name)
+ {
+  let name=document.getElementById("name").value;
+  let email=document.getElementById("email").value;
+  
+ }
+    console.log(add(5,5));
+    console.log(string("Hello","World"));
+    console.log(hello("Rakshitha",19));
+
+  </script>
 </body>
 </html>
