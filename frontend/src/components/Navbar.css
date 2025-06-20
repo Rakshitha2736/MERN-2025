@@ -1,0 +1,29 @@
+.navbar {
+  background-color: antiquewhite;
+  font-size: xx-large;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex; /* Makes the <li> horizontal */
+  gap: 2rem;     /* Adds spacing between items */
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li a:hover {
+  color: blue;
+  text-decoration: underline;
+}

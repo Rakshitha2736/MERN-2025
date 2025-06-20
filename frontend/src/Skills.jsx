@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Skills = (skill) => {
+const Skills = ({skill}) => {
   return (
-    <div>Skills</div>
+    <div>
+        <h1>Skills</h1>
+        <ul>
+            {skill.map((s,index)=>(
+                <li key={index}>{s}</li>
+          )  )}
+        </ul>
+    </div>
   )
 }
 
