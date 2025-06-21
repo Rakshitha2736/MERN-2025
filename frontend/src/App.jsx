@@ -12,6 +12,7 @@ import Navbar from './components/Navbar'
 import State from './hooks/State'
 import Form from './hooks/Form'
 import Effect from './hooks/Effect'
+import Reducer from './hooks/Reducer'
 function App() {
   
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/state' element={<State />} />
       <Route path='/form' element={<Form />} />
       <Route path='/effect' element={<Effect />} />
+      <Route path='/reducer' element={<Reducer />} />
       
     </Routes>
     {/* <Welcome name='Rakshitha'/> */}
