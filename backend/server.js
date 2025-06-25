@@ -3,6 +3,8 @@ import {connectDB} from './config/db.js';
 import mongoose from 'mongoose';
 import User from './model/User.js';
 import Form from './model/Form.js';
+import dotenv from 'dotenv';
+dotenv.config();
 import cors from 'cors';
 const app= express()
 connectDB();
